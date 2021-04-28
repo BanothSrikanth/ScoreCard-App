@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:text="Team A"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/score_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddThreePoints"
+            android:text="+3 Points"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddTwoPoints"
+            android:text="+2 Points"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddOnePoints"
+            android:text="+1 Points"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:text="Team B"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/score_updateTeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddOnePointsB"
+            android:text="+3 Points"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddTwoPointsB"
+            android:text="+2 Points"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFAA07"
+            android:onClick="AddOnePointsB"
+            android:text="+1 Points"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    
+
+</LinearLayout>
