@@ -1,1 +1,1 @@
-# ScoreCard-App
+# Gamecard
